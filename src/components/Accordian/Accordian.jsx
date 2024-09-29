@@ -33,9 +33,9 @@ export default function Accordian() {
 
   return (
     <>
-      <div className="m-10">
-        <div className="flex flex-col items-center gap-5">
-          <h2 className="font-bold text-xl tracking-widest">ACCORDIAN</h2>
+      <div className="w-screen h-screen">
+        <div className="flex flex-col items-center p-20 gap-5">
+          <h2 className="font-bold text-xl tracking-widest drop-shadow-md">ACCORDIAN</h2>
           <Button className="w-auto" variant={enableMultiple ? "outline" :"default"} onClick={handleToggle}>
             {enableMultiple ? "DISABLE" : "ENABLE"} MULTIPLE SELECTION
           </Button>
