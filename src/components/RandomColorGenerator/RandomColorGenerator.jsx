@@ -55,7 +55,7 @@ export default function RandomColorGenerator() {
             <p className="font-light text-xl text-center">Generate random colors in HEX or RGB</p>
 
 
-            <div className="m-5 border rounded-sm w-full md:w-1/4 h-1/2 flex" style={{backgroundColor: color}}>
+            <div className="m-1 md:m-5 border rounded-sm w-full md:w-5/6 h-1/2 flex" style={{backgroundColor: color}}>
                 <h3 className="place-self-center mx-auto tracking-widest font-semibold text-xl text-slate-200 drop-shadow-xl">{color}</h3>
             </div>
             <div className="flex gap-5">
