@@ -16,7 +16,7 @@ export default function MenuItem({ item }) {
       <div className="w-full flex justify-between">
         {item.name}
         {item && hasChildren ? (
-          <span className="text-xl font-semibold" onClick={handleToggle}>{isOpen ? "-" : "+"}</span>
+          <span className="text-xl font-semibold cursor-pointer" onClick={handleToggle}>{isOpen ? "-" : "+"}</span>
         ) : null}
       </div>
       {hasChildren && isOpen && <MenuList list={item.children} />}
