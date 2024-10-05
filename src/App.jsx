@@ -1,5 +1,6 @@
 import Accordian from "./components/Accordian/Accordian";
 import ImageSlider from "./components/ImageSlider/ImageSlider";
+import LoadMore from "./components/LoadMore/LoadMore";
 import Menu from "./components/NestedMenu/Menu";
 import RandomColorGenerator from "./components/RandomColorGenerator/RandomColorGenerator";
 import StarRatings from "./components/StarRatings/StarRatings";
@@ -8,6 +9,10 @@ function App() {
   return (
     <>
       <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+        {/* Load more demo from API */}
+        <div className="snap-start">
+          <LoadMore />
+        </div>
         {/* Nested Menu */}
         <div className="snap-start">
           <Menu />
@@ -28,8 +33,6 @@ function App() {
         <div className="snap-start">
           <StarRatings />
         </div>
-        {/*  */}
-       
       </div>
     </>
   );

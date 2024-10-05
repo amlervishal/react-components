@@ -71,3 +71,8 @@
     @apply bg-background text-foreground;
   }
 }
+@layer components {
+  .card-primary {
+    @apply bg-background w-full flex flex-col items-center text-slate-500 p-4 border rounded-sm shadow-md overflow-hidden;
+  }
+}
