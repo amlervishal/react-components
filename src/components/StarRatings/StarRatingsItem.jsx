@@ -21,9 +21,9 @@ export default function StarRatingsItem({ noOfStars = 5, children }) {
   }
 
   return (
-    <div className="w-1/2 flex justify-between items-center border rounded-sm px-10 py-2 drop-shadow-sm shadow-md">
+    <div className="w-11/12 md:w-1/2 flex justify-between items-center border rounded-sm px-4 md:px-10 py-2 drop-shadow-sm shadow-md">
       <h4 className="text-xl tracking-wider text-slate-700">{children}</h4>
-      <div className="flex text-2xl">
+      <div className="flex text-xl">
         {[...Array(noOfStars)].map((_, index) => {
           index += 1;
 
